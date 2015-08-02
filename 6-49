@@ -1,4 +1,4 @@
-
+```
 puts "hi we generate some numbers from 1 to 49"
 puts "note the file to write"
 filename = gets.chomp.to_s
@@ -18,7 +18,7 @@ timef = timef
 end	
 end
 text.close
-
+```
 This is my first program which generates six numbers from 1 to 49 range and writes it as the amount of arrays to the text file.
 Further I hope to improve this program by adding some statistical filters, so on....  
-:pig_nose:
+
