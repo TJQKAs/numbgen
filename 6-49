@@ -1,0 +1,21 @@
+**
+puts "hi we generate some numbers from 1 to 49"
+puts "note the file to write"
+filename = gets.chomp.to_s
+text = open(filename, "w")
+puts "how many times do you want to repeat"
+time = gets.chomp.to_i
+timef = 0
+while timef != time 	
+arran = Array.new(6){|var| var = rand(49)+1 }.uniq.sort
+if arran.size == 6
+puts arran 
+text.write(arran)
+text.write("\n")
+timef = timef + 1 
+else
+timef = timef
+end	
+end
+text.close
+**
